@@ -5,7 +5,7 @@ import uuid
 
 def upload_avatar_path(instance, filename):
     ext = filename.split('.')[-1]
-    return '/'.join(['avatars', str(instance.user_profile.id) + str(".") + str(ext)])
+    return '/'.join(['avatars', str(instance.user_profile.id) + str(".") + str("jpeg")])
 
 
 class Profile(models.Model):
@@ -28,8 +28,8 @@ class Category(models.Model):
 
 class Task(models.Model):
     STATUS = (
-        ('1', 'Before it started'),
-        ('2', 'Start now'),
+        ('1', 'Before started'),
+        ('2', 'On going'),
         ('3', 'Finished'),
     )
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
