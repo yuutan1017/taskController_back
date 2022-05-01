@@ -4,7 +4,6 @@ import uuid
 
 
 def upload_avatar_path(instance, filename):
-    ext = filename.split('.')[-1]
     return '/'.join(['avatars', str(instance.user_profile.id) + str(".") + str("jpeg")])
 
 
