@@ -52,6 +52,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     "https://task-controller-one.vercel.app",
     "http://localhost:3000",
+    "http://localhost:8080",
 ]
 
 ROOT_URLCONF = 'taskController.urls'
